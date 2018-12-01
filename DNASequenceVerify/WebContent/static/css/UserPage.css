@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+.header{
+   height:73px;
+   background:#6e0ca1;
+}
+.header .first{
+	float:left
+    margin-left:30px;
+    background:#730da9;
+}
+
+.header .last{
+	float:right;
+	line-height:56px;
+	height:20px;
+    margin-right:20px;
+}
+.view{
+	
+}
+.view .menu{
+	float:left;
+	width:200px;
+	height:1500px;
+	background:#B6B6B6;
+}
+.view .menu ul li{
+    list-style:none;<!--去标题上面的点-->
+    width:15%;
+    height:56px;
+    text-align:left;
+    line-height:30px;
+    cursor:pointer;<!--鼠标变小手-->
+} 
+
+.view .expShow{
+	height:30px;
+	width:1580px;
+	background:#aaa3a3;
+	text-align:center;
+}
+
+.view .banner{
+	height:410px;
+	background:#DBDBDB;
+	position:relative;
+	overflow:hidden;
+}//去掉背景色
+
+
+
+.view .banner.content{
+	width:800px;
+	height:900px;
+	margin:20px auto;
+	position:relative;
+	text-align:center;
+}
+
+.view .banner .content .result{
+	float:left;
+}
+.view .banner .content .submitbutton{
+	float:right;
+
+}

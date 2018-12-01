@@ -1,0 +1,67 @@
+Example runs: (run_all.py is in the start/ directory)
+-----------------------------------------------------------------------
+1)
+# run on input file 'integrated-intensity2.csv', classifying the sequences
+# with value above 67600 as positive and below 23700 as negative (ignore the rest)
+python run_all.py -th 6.76E+04 -tl 2.37E+04 integrated-intensity2.csv
+2)
+# same as before but with verbose output (-v)
+python run_all.py -th 6.76E+04 -tl 2.37E+04 -v integrated-intensity2.csv
+3)
+# also generate new features
+python run_all.py -th 6.76E+04 -tl 2.37E+04 -v -g integrated-intensity2.csv
+4)
+# perform cross validation test on features from training file and stop
+python run_all.py -th 6.76E+04 -tl 2.37E+04 -v -c integrated-intensity2.csv
+5)
+# run without threshold (so values in input file are either 0 or 1)
+python run_all.py integrated-intensity.csv -v
+-----------------------------------------------------------------------
+
+Input file format:
+-----------------------------------------------------------------------
+-Input files go in the directory data/input_data (data\input_data on Windows)
+-Each line should be of the form:
+Sequence,Value 
+-Note:There is no header line.
+-Value should either be a floating point number (possibly in scientific notation) or binary (0 or 1)
+-----------------------------------------------------------------------
+
+Output files:
+-----------------------------------------------------------------------
+-All input and output files are in subdirectories in the directory "data"
+-data/new_features (data\new_features on Windows) contains the new features which have been generated (if -g or --generate are specified)
+-data/tmp_files (data\tmp_files on Windows) is used for temporary files and is cleaned after each run.
+-data/trained_svm (data\trained_svm on Windows) contains the trained Support Vector Machine (only created if -c or --cross-validation are not specified)
+-data/training_data (data\training_data on Windows) contains the output of MERCI. After some preprocessing it is the input to libsvm.
+-----------------------------------------------------------------------
+
+To build: (linux only)
+-----------------------------------------------------------------------
+cd libsvm/libsvm-3.18/python
+make
+-----------------------------------------------------------------------
+
+Windows Users: 
+-----------------------------------------------------------------------
+1) You must have perl installed. Use:
+http://strawberryperl.com/
+2) You must download python:
+https://www.python.org/downloads/
+3) To run, you must:
+	i) Open up "cmd"
+	ii) Specify full path of python.exe when running
+-----------------------------------------------------------------------
+
+OS X Users:
+-----------------------------------------------------------------------
+Make sure perl & python are both installed
+-----------------------------------------------------------------------
+
+
+To cite the software:
+-----------------------------------------------------------------------
+S. Copp, P. Bogdanov, M. Debord, A. Singh, E. Gwinn, “Base Motif Recognition and Design of
+DNA Templates for Fluorescent Silver Clusters by Machine Learning,”, Journal of Advanced Materials, 2014.
+-----------------------------------------------------------------------
+

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+.header{
+   width:100%;
+   height:73px;
+   background:#6e0ca1;
+}
+.header .first{
+	float:left
+    margin-left:30px;
+    background:#730da9;
+}
+
+.header .last{
+	float:right;
+	line-height:56px;
+	height:20px;
+    margin-right:20px;
+}
+
+.main{
+	width:100%;
+	height:100%;
+	background:#aaa3a3;
+}
+
+.main .menu{
+	float:left;
+	width:20%;
+	height:10000px;
+	background:#B6B6B6;
+}
+
+.main .menu ul li{
+    list-style:none;<!--去标题上面的点-->
+    width:15%;
+    height:56px;
+    text-align:left;
+    line-height:30px;
+    cursor:pointer;<!--鼠标变小手-->
+} 
+
+.main .list{
+	width:80%;
+	height:10000px;
+	background:#aaa3a3;
+	text-align:center;
+}
+
+.main .list ul li{
+    list-style:none;<!--去标题上面的点-->
+    width:35%;
+    height:60px;
+    text-align:left;
+    line-height:30px;
+}
+
+.login{
+	width:100%;
+	height:30%;
+	background:#aaa3a3;
+	text-align:center;
+	
+}
+
+.login ul li{
+	list-style:none;
+	width:80%;
+	height:30px;
+}
+
+

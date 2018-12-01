@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <web-app>
+  
+  <servlet>
+       <servlet-name>UpdatePhaseFourService</servlet-name>
+       <servlet-class>service.UpdatePhaseFourService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>UpdatePhaseFourService</servlet-name>
+        <url-pattern>/servlet/UpdatePhaseFourService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+       <servlet-name>UpdatePhaseThreeService</servlet-name>
+       <servlet-class>service.UpdatePhaseThreeService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>UpdatePhaseThreeService</servlet-name>
+        <url-pattern>/servlet/UpdatePhaseThreeService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+       <servlet-name>UpdatePhaseTwoService</servlet-name>
+       <servlet-class>service.UpdatePhaseTwoService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>UpdatePhaseTwoService</servlet-name>
+        <url-pattern>/servlet/UpdatePhaseTwoService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+       <servlet-name>UpdatePhaseOneService</servlet-name>
+       <servlet-class>service.UpdatePhaseOneService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>UpdatePhaseOneService</servlet-name>
+        <url-pattern>/servlet/UpdatePhaseOneService</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+       <servlet-name>ReturnPreviousPhaseService</servlet-name>
+       <servlet-class>service.ReturnPreviousPhaseService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>ReturnPreviousPhaseService</servlet-name>
+        <url-pattern>/servlet/ReturnPreviousPhaseService</url-pattern>
+  </servlet-mapping>
+
+ 
+  
+  <!-- Default config -->
+ <welcome-file-list>
+		<welcome-file>Index.jsp</welcome-file>
+</welcome-file-list>
+  
+  
+  <!--new servlet-->
+  
+  <servlet>
+       <servlet-name>ListUserService</servlet-name>
+       <servlet-class>service.ListUserService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>ListUserService</servlet-name>
+        <url-pattern>/servlet/ListUserService</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+       <servlet-name>CreateUserService</servlet-name>
+       <servlet-class>service.CreateUserService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>CreateUserService</servlet-name>
+        <url-pattern>/servlet/CreateUserService</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+       <servlet-name>EditUserInfoService</servlet-name>
+       <servlet-class>service.EditUserInfoService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>EditUserInfoService</servlet-name>
+        <url-pattern>/servlet/EditUserInfoService</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+       <servlet-name>ListProfileService</servlet-name>
+       <servlet-class>service.ListProfileService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>ListProfileService</servlet-name>
+        <url-pattern>/servlet/ListProfileService</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+       <servlet-name>EditProfileService</servlet-name>
+       <servlet-class>service.EditProfileService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>EditProfileService</servlet-name>
+        <url-pattern>/servlet/EditProfileService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+       <servlet-name>ListFileService</servlet-name>
+       <servlet-class>service.ListFileService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>ListFileService</servlet-name>
+        <url-pattern>/servlet/ListFileService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+       <servlet-name>DownloadService</servlet-name>
+       <servlet-class>service.DownloadService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>DownloadService</servlet-name>
+        <url-pattern>/servlet/DownloadService</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+       <servlet-name>UploadService </servlet-name>
+       <servlet-class>service.UploadService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>UploadService </servlet-name>
+        <url-pattern>/servlet/UploadService</url-pattern>
+  </servlet-mapping>
+  
+  
+      <servlet>
+       <servlet-name>DeleteFileService </servlet-name>
+       <servlet-class>service.DeleteFileService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>DeleteFileService </servlet-name>
+        <url-pattern>/servlet/DeleteFileService</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+       <servlet-name>ListAlgorithmService</servlet-name>
+       <servlet-class>service.ListAlgorithmService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>ListAlgorithmService</servlet-name>
+        <url-pattern>/servlet/ListAlgorithmService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+       <servlet-name>ListAlgorithmInfoService</servlet-name>
+       <servlet-class>service.ListAlgorithmInfoService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>ListAlgorithmInfoService</servlet-name>
+        <url-pattern>/servlet/ListAlgorithmInfoService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+       <servlet-name>ListExperimentCreatedForm</servlet-name>
+       <servlet-class>service.ListExperimentCreatedForm</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>ListExperimentCreatedForm</servlet-name>
+        <url-pattern>/servlet/ListExperimentCreatedForm</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+       <servlet-name>CreateExperimentService</servlet-name>
+       <servlet-class>service.CreateExperimentService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>CreateExperimentService</servlet-name>
+        <url-pattern>/servlet/CreateExperimentService</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+       <servlet-name>CreateExampleExperimentService</servlet-name>
+       <servlet-class>service.CreateExampleExperimentService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>CreateExampleExperimentService</servlet-name>
+        <url-pattern>/servlet/CreateExampleExperimentService</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+       <servlet-name>DeleteExperimentService</servlet-name>
+       <servlet-class>service.DeleteExperimentService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>DeleteExperimentService</servlet-name>
+        <url-pattern>/servlet/DeleteExperimentService</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+       <servlet-name>ListExperimentService</servlet-name>
+       <servlet-class>service.ListExperimentService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>ListExperimentService</servlet-name>
+        <url-pattern>/servlet/ListExperimentService</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+       <servlet-name>ListExperimentInfoService</servlet-name>
+       <servlet-class>service.ListExperimentInfoService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>ListExperimentInfoService</servlet-name>
+        <url-pattern>/servlet/ListExperimentInfoService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+       <servlet-name>EditExperimentService</servlet-name>
+       <servlet-class>service.EditExperimentService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>EditExperimentService</servlet-name>
+        <url-pattern>/servlet/EditExperimentService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+       <servlet-name>ExcuteLibsvmExperimentService</servlet-name>
+       <servlet-class>service.ExcuteLibsvmExperimentService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>ExcuteLibsvmExperimentService</servlet-name>
+        <url-pattern>/servlet/ExcuteLibsvmExperimentService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+       <servlet-name>LoginService</servlet-name>
+       <servlet-class>service.LoginService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>LoginService</servlet-name>
+        <url-pattern>/servlet/LoginService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+       <servlet-name>LogoutService</servlet-name>
+       <servlet-class>service.LogoutService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>LogoutService</servlet-name>
+        <url-pattern>/servlet/LogoutService</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+       <servlet-name>ReceivePhaseResultService</servlet-name>
+       <servlet-class>service.ReceivePhaseResultService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>ReceivePhaseResultService</servlet-name>
+        <url-pattern>/servlet/ReceivePhaseResultService</url-pattern>
+  </servlet-mapping>
+  
+     <filter>
+       <filter-name>CorsFilter</filter-name>
+       <filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
+     </filter>
+     <filter-mapping>
+       <filter-name>CorsFilter</filter-name>
+       <url-pattern>/*</url-pattern>
+     </filter-mapping>
+</web-app>
